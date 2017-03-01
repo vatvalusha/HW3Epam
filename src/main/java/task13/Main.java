@@ -1,5 +1,8 @@
 package task13;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -10,7 +13,10 @@ public class Main {
         CreateList<People> listPeople = new CreateList<People>();
         listPeople.fullingList();
         System.out.println(listPeople.getList());
-        listPeople.sortList();
+
+        listPeople.sortList(listPeople.getList());
         System.out.println(listPeople.getList());
-    }
+
+
+     }
 }
